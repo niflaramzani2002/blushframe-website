@@ -42,16 +42,16 @@ const Footer = () => {
 
             {/* Social icons on the right */}
             <div className="footer-social-row">
-              <a href="#" className="social-icon" aria-label="Instagram">
+              <a href="https://instagram.com" className="social-icon" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="#" className="social-icon" aria-label="Facebook">
+              <a href="https://facebook.com" className="social-icon" aria-label="Facebook">
                 <FaFacebookF />
               </a>
-              <a href="#" className="social-icon" aria-label="WhatsApp">
+              <a href="https://whatsapp.com" className="social-icon" aria-label="WhatsApp">
                 <FaWhatsapp />
               </a>
-              <a href="#" className="social-icon" aria-label="TikTok">
+              <a href="https://tiktok.com" className="social-icon" aria-label="TikTok">
                 <FaTiktok />
               </a>
             </div>
