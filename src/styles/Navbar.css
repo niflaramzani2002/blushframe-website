@@ -1,0 +1,165 @@
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: linear-gradient(90deg, #e9b0b5, #e1a8ad);
+  box-shadow: 0 3px 10px rgba(107, 17, 20, 0.18);
+}
+
+
+
+.navbar-content {
+  max-width: 1800px;         
+  margin: 0 auto;
+  padding: 14px 60px;         
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;         
+}
+
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  height: 55px;               
+}
+
+.logo-img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  font-size: 16px;
+  color: #5b1b23;
+}
+
+.logo-sub {
+  font-size: 12px;
+  color: #7a4952;
+}
+
+
+
+.navbar-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.navbar-links a {
+  position: relative;
+  text-decoration: none;
+  color: #4a151a;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #6b1114;
+  transition: width 0.22s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+
+
+.navbar-search {
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 238, 242, 0.95);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 6px rgba(95, 23, 35, 0.2);
+}
+
+
+.navbar-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 3px 8px;
+  font-size: 13px;
+  min-width: 150px;
+  color: #4a151a;
+}
+
+.navbar-search input::placeholder {
+  color: #b47a85;
+}
+
+.search-icon {
+  font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .navbar-content {
+    padding: 12px 28px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+  }
+
+  .navbar-left {
+    justify-content: center;
+  }
+
+  .navbar-links {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  .navbar-search {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
